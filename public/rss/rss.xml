@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Novedades de libros 2024</title>
+    <link>https://www.casadellibro.com/novedades-libros</link>
+    <description>Novedades de libros</description>
+    <language>es-es</language>
+    <author>Nayan Betancor</author>
+
+    <item>
+      <title>Lanzamientos de las editoriales</title>
+      <link>https://www.lecturalia.com/libros/pu/novedades-editoriales</link>
+      <description>Proximos lanzamientos de las editoriales</description>
+      <author>Nayan Betancor</author>
+    </item>
+
+    <item>
+      <title>"El libro mas aburrido de todos los tiempos"</title>
+      <link>https://www.hobbyconsolas.com/noticias/brandon-sanderson-ha-escrito-nuevo-libro-todos-esperan-sea-distinto-titulo-anuncia-1368220</link>
+      <description>Un libro escrito por Brandon Sanderson titulado "El libro mas aburrido de todos los tiempos"</description>
+      <pubDate>27 Febrero 2024 16:00</pubDate>
+      <author>Nayan Betancor</author>
+    </item>
+
+    <item>
+      <title>Patrick Rothfuss y su trilogia sin acabar</title>
+      <link>https://www.elmundo.es/cultura/literatura/2023/09/14/64faf9d5fc6c83fa458b45f6.html</link>
+      <description>El caso Patrick Rothfuss: fans enfurecidos, enfermedad mental y una trilogía sin acabar</description>
+      <pubDate>14 Enero 2024 11:00</pubDate>
+      <author>Nayan Betancor</author>
+    </item>
+
+    <item>
+      <title>Publicacion de "El estrecho sendero entre deseos"</title>
+      <link>https://elplacerdelalectura.com/2023/12/patrick-rothfuss-vuelve-al-mundo-de-la-saga-cronica-del-asesino-de-reyes-con-el-estrecho-sendero-entre-deseos-2.html</link>
+      <description>Patrick Rothfuss vuelve al mundo de la saga «Crónica del Asesino de Reyes» con El estrecho sendero entre deseos</description>
+      <pubDate>15 Mayo 2024 20:00</pubDate>
+      <author>Nayan Betancor</author>
+    </item>
+
+    <item>
+      <title>Nuevo libro de Patrick Rothfuss</title>
+      <link>https://via-news.es/el-nuevo-libro-de-patrick-rothfuss-en-castellano-ya-tiene-fecha/</link>
+      <description>El nuevo libro de Patrick Rothfuss en castellano ya tiene fecha</description>
+      <pubDate>29 Marzo 2024 15:00</pubDate>
+      <author>Nayan Betancor</author>
+    </item>
+
+  </channel>
+</rss>
