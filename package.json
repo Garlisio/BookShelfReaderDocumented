@@ -24,6 +24,7 @@
     "react-icons": "^5.4.0",
     "react-pdf": "^9.1.1",
     "react-router-dom": "^6.23.0",
+    "recharts": "^2.15.1",
     "whatwg-fetch": "^3.6.20"
   },
   "devDependencies": {

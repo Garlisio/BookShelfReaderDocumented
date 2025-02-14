@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { jsPDF } from "jspdf";
 import { IoMdDownload } from "react-icons/io";
-
 export default function ReporteLibros() {
   const [libros, setLibros] = useState([]);
+  const [totalLibros, setTotalLibros] = useState(0);
 
   useEffect(() => {
     const cargarLibrosDesdeIndexedDB = () => {
@@ -24,6 +24,7 @@ export default function ReporteLibros() {
               lastPage,
             }))
           );
+          setTotalLibros(storedBooks.length);
         };
 
         allBooksRequest.onerror = (error) => {
@@ -42,13 +43,14 @@ export default function ReporteLibros() {
   const generarPDF = () => {
     const doc = new jsPDF();
     doc.text("Informe de Libros", 10, 10);
+    doc.text(`Total de libros: ${totalLibros}`, 10, 20);
     libros.forEach(({ name, favorite, lastPage }, index) => {
       doc.text(
         `${index + 1}. ${name} | Favorito: ${
           favorite ? "Sí" : "No"
         } | Última página: ${lastPage}`,
         10,
-        20 + index * 10
+        30 + index * 10
       );
     });
     doc.save("informe_libros.pdf");
@@ -57,7 +59,7 @@ export default function ReporteLibros() {
   return (
     <div>
       <h2>
-        Descargar Reporte
+        Descargar Informe
         <a onClick={generarPDF}>
           {" "}
           <IoMdDownload />
