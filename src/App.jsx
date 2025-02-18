@@ -4,6 +4,7 @@ import Login from "./pages/Login";
 import Books from "./pages/Books";
 import Register from "./pages/Register";
 import PdfReader from "./pages/PdfReader";
+import Report from "./pages/Report";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/Login" element={<Login />} />
         <Route path="/Books" element={<Books />} />
         <Route path="/reader" element={<PdfReader />} />
+        <Route path="/Report" element={<Report />} />
       </Routes>
     </BrowserRouter>
   );

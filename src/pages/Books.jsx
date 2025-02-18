@@ -4,7 +4,7 @@ import { initDB } from "../pages/utils/db.js";
 import { useNavigate } from "react-router-dom";
 import * as pdfjsLib from "pdfjs-dist";
 import { pdfjs } from "react-pdf";
-import ReporteUsuarios from "../ReporteUsuarios.jsx";
+import { HiOutlineDocumentReport } from "react-icons/hi";
 
 //Iconos
 import { ImExit } from "react-icons/im";
@@ -124,6 +124,11 @@ const Books = () => {
     navigate("/login");
   };
 
+  const handleReportClick = (event) => {
+    event.preventDefault();
+    navigate("/report");
+  };
+
   const openModal = (book) => {
     setModalData(book);
   };
@@ -197,7 +202,11 @@ const Books = () => {
         <h2>
           <IoLibrary /> Biblioteca
         </h2>
-        <ReporteUsuarios />
+        <h2>
+          <button className="toggle-file-input" onClick={handleReportClick}>
+            <HiOutlineDocumentReport size={30} />
+          </button>
+        </h2>
       </div>
       <div className="bookshelf-header2">
         <button className="logout-button" onClick={handleLogOutClick}>
